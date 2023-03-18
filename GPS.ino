@@ -56,7 +56,7 @@ void SendSms()
   delay(100);
   smsSerial.println("AT+CMGF=1"); // Configuring TEXT mode
   delay(100);
-  smsSerial.println("AT+CMGS=\"+660997976787\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+  smsSerial.println("AT+CMGS=\"+ZZxxxxxxxxxxx\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
   delay(100);
   smsSerial.print(SMS);
   delay(100);
